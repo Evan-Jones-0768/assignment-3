@@ -1,7 +1,51 @@
 header{
     background-color: #000;
     color: #fff;
-    text-wrap: 940px;
     display: flex;
 
+}
+/* add div class=wrapper in html */
+.wrapper {
+    max-width: 940px;
+    
+}
+
+.hero{
+    height: 600px;
+    background-color: beige;
+    background-image: url(../images/bio-pic.jpg);
+}
+.hero, h1{
+    color: black;
+    opacity: 50%;
+    text-shadow: 3px;
+}
+
+.about-me{
+    
+}
+
+.services{
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.services, h2{
+    max-width: 300px;
+    text-align: center;
+}
+
+.my-work{
+    display: grid;
+    grid-column: repeat(6, 1fr);
+    grid-row: repeat(2, 1fr);
+    grid-area: 
+    "i1 i1 i1 i2 i2 i2"
+    "i3 i3 i4 i4 i5 i5"
+    ;
+}
+
+footer{
+    background-color: #000;
+    color: white;
 }
