@@ -1,8 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+
 header{
     background-color: #000;
     color: #fff;
+    justify-content: center;
+  
+
+}
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    margin-left: 0px;
     display: flex;
 
+}
+
+nav ul li{
+    padding-left: 15px;
 }
 /* add div class=wrapper in html */
 .wrapper {
@@ -12,25 +33,43 @@ header{
 
 .hero{
     height: 600px;
+    background-image: ;
     background-color: beige;
-    background-image: url(../images/bio-pic.jpg);
-}
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+    
 .hero, h1{
+    max-width: 60%;
     color: black;
     opacity: 50%;
     text-shadow: 3px;
+    display: flex;
 }
 
 .about-me{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
     
+}
+.about-me .block:nth-child(2){
+    
+
 }
 
 .services{
     background-color: #fafafa;
+    
+}
+
+.services .div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .services, h2{
+    display: flex;
     max-width: 300px;
     text-align: center;
 }
