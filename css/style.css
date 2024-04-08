@@ -7,7 +7,7 @@ header{
     background-color: #000;
     color: #fff;
     justify-content: center;
-  
+    align-items: center;
 
 }
 header .wrapper{
@@ -33,7 +33,7 @@ nav ul li{
 
 .hero{
     height: 600px;
-    background-image: ;
+    background-image: url(../images/hands-typing.jpg);
     background-color: beige;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -45,16 +45,20 @@ nav ul li{
     color: black;
     opacity: 50%;
     text-shadow: 3px;
+    background-color: white;
     display: flex;
 }
 
 .about-me{
     display: grid;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(2 1fr);
+    align-items: start;
+    align-content: center;
+  }
     
-}
+
 .about-me .block:nth-child(2){
-    
+    align-self: end;
 
 }
 
